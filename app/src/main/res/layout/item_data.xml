@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.project.adscientiamtest.customview.SquareView
+                android:id="@+id/square"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/yellow"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/square"
+                style="@style/date_style"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                tools:text="15/02/1191 15:04:25"/>
+
+            <TextView
+                android:id="@+id/textCentralPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_central_point"
+                tools:text="Position central du carré"
+                style="@style/textCentralPoint_style"
+                app:layout_constraintLeft_toLeftOf="@id/date"
+                app:layout_constraintTop_toBottomOf="@id/date"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/centralPointX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="@id/date"
+                app:layout_constraintBottom_toBottomOf="@id/square"
+                tools:text="X : 1145.415"/>
+
+            <TextView
+                android:id="@+id/centralPointY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Y : 154.478"
+                app:layout_constraintLeft_toRightOf="@id/centralPointX"
+                app:layout_constraintTop_toTopOf="@id/centralPointX"
+                app:layout_constraintBottom_toBottomOf="@id/centralPointX"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

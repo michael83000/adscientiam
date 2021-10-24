@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">adScientiamTest</string>
+    <string name="text_central_point">Point central du carré</string>
+    <string name="string_central_point_X">X : %1$.3f</string>
+    <string name="string_central_point_Y">Y : %1$.3f</string>
+    <string name="string_date">%1$s</string>
+    <string name="menu_activity_main_voir_données">Voir données</string>
+    <string name="delete_all_datas">Supprimer toutes les données</string>
+    <string name="delete_text_alert_dialog">Etes-vous sur de vouloir supprimer toutes les données ?</string>
+    <string name="delete_title_dialog">Supprimer</string>
+    <string name="string_positive_dialog">Oui</string>
+    <string name="string_negative_dialog">Non</string>
+</resources>

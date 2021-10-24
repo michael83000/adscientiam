@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/launch_data_collected_activity"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_trending_up_white_24"
+        android:title="@string/menu_activity_main_voir_données"/>
+
+    <item android:id="@+id/dark_mode"
+        app:showAsAction="collapseActionView"
+        android:title="Dark mode"/>
+
+</menu>
